@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pakistan Places Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Federant&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" href="images/gallery 7 image.jpg" type="image/jpg" />
+    
+  
+  </head>
+  <body>
+   
+    <!-- desktop screen -->
+    <div class="sidebar" id="sidebar">
+<div class="header">
+  <h3 class="libre-baskerville-regular">
+    <i class="fa-solid fa-house"></i> Gallery
+  </h3>
+</div>
+
+
+      <ul class="navbar">
+  <li class="nav-items "><a href="index.html"><i class="fa-solid fa-images"></i> All Photos</a></li>
+  <li class="nav-items"><a href="Nature.html"><i class="fa-solid fa-tree"></i> Nature</a></li>
+  <li class="nav-items"><a href="Travel.html"><i class="fa-solid fa-plane"></i> Travel</a></li>
+  <li class="nav-items"><a href="Animal.html"><i class="fa-solid fa-paw"></i> Animals</a></li>
+</ul>
+    </div>
+
+  <!-- Mobile screen -->
+<div class="toggler">
+  <h3 class="libre-baskerville-regular">
+    <i class="fa-solid fa-house"></i> Gallery
+  </h3>
+  <div class="toggle-btn" id="toggleBtn">&#9776;</div>
+</div>
+
+<!-- Mobile sidebar (hidden by default) -->
+<div class="mobile-sidebar" id="MobileSidebar">
+  <div class="header">
+   <h3 class="libre-baskerville-regular">
+    <i class="fa-solid fa-house"></i> Gallery
+  </h3>
+  </div>
+
+  <ul class="navbar">
+    <li class="nav-items"><a href="index.html"><i class="fa-solid fa-images"></i> All Photos</a></li>
+    <li class="nav-items"><a href="Nature.html"><i class="fa-solid fa-tree"></i> Nature</a></li>
+    <li class="nav-items"><a href="Travel.html"><i class="fa-solid fa-plane"></i> Travel</a></li>
+    <li class="nav-items"><a href="Animal.html"><i class="fa-solid fa-paw"></i> Animals</a></li>
+  </ul>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <div class="icon" onclick="closeLightbox()">&#10006;</div>
+  <div class="icon-left" id="prevbtn">&#9664;</div>  
+   <img id="lightbox-img" src="" > 
+ 
+<div class="icon-right" id="nextbtn">&#9654;</div>  
+
+</div>
+
+
+  <div class="container">
+
+  <!-- Card 1: Nature -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/Sunrise in Mountains.jpg" alt="Sunrise in Mountains" onclick="openLightbox(this.src)" />
+    </div>
+    <div class="content">
+      <h2>Sunrise in Mountains</h2>
+      <p>Golden sunrise over snowy mountain peaks.</p>
+    </div>
+  </div>
+
+  <!-- Card 2: Animals -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/Elephant.jpg" alt="Elephant" onclick="openLightbox(this.src)" />
+    </div>
+    <div class="content">
+      <h2>Elephant</h2>
+      <p>Gentle giant known for intelligence and memory.</p>
+    </div>
+  </div>
+
+  <!-- Card 3: Travel -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 3 image.jpg" alt="Attabad Lake" onclick="openLightbox(this.src)" />
+    </div>
+    <div class="content">
+      <h2>Attabad Lake - Hunza</h2>
+      <p>Formed after a landslide in 2010, now a tourist spot.</p>
+    </div>
+  </div>
+
+  <!-- Card 4: Nature -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/Lake Reflection.jpg" alt="Lake Reflection" onclick="openLightbox(this.src)" />
+    </div>
+    <div class="content">
+      <h2>Lake Reflection</h2>
+      <p>Mountains and sky reflected perfectly on calm lake.</p>
+    </div>
+  </div>
+
+  <!-- Card 5: Animals -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/peacock.jpg" alt="Peacock" onclick="openLightbox(this.src)" />
+    </div>
+    <div class="content">
+      <h2>Peacock</h2>
+      <p>National bird of India, colorful and majestic.</p>
+    </div>
+  </div>
+
+  <!-- Card 6: Art & Design -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/water fall.png" alt="Waterfall" onclick="openLightbox(this.src)" />
+    </div>
+    <div class="content">
+      <h2>Waterfall</h2>
+      <p>Crystal clear waterfall flowing through rocks.</p>
+    </div>
+  </div>
+  <!-- Card 7: Travel -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 7 image.jpg" alt="Badshahi Mosque" onclick="openLightbox(this.src)" />
+    </div>
+    <div class="content">
+      <h2>Badshahi Mosque - Lahore</h2>
+      <p>One of the largest mosques, built by Emperor Aurangzeb.</p>
+    </div>
+  </div>
+
+  <!-- Card 8: Nature -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/Cherry Blossom.png" alt="Cherry Blossom" onclick="openLightbox(this.src)" />
+    </div>
+    <div class="content">
+      <h2>Cherry Blossom</h2>
+      <p>Pink blossoms blooming in spring season.</p>
+    </div>
+  </div>
+
+  <!-- Card 9: Animals -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/Koala.png" alt="Koala" onclick="openLightbox(this.src)" />
+    </div>
+    <div class="content">
+      <h2>Koala</h2>
+      <p>Australian marsupial that feeds on eucalyptus leaves.</p>
+    </div>
+  </div>
+
+  <!-- Card 10: Art & Design -->
+    <div class="card">
+    <div class="image-box">
+      <img src="images/tiger.jpg" alt="Tiger" onclick="openLightbox(this.src)" />
+    </div>
+    <div class="content">
+      <h2>Tiger</h2>
+      <p>Powerful feline, native to forests of Asia.</p>
+    </div>
+  </div>
+
+  <!-- Card 11: Travel -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 11 image.jpg" alt="Shalimar Gardens" onclick="openLightbox(this.src)" />
+    </div>
+    <div class="content">
+      <h2>Shalimar Gardens - Lahore</h2>
+      <p>Mughal-era royal gardens built by Shah Jahan.</p>
+    </div>
+  </div>
+
+  <!-- Card 12: Nature -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/Flower Field.png" alt="Flower Field" onclick="openLightbox(this.src)" />
+    </div>
+    <div class="content">
+      <h2>Flower Field</h2>
+      <p>Vibrant colorful flowers covering a wide field.</p>
+    </div>
+  </div>
+
+  <!-- Card 13: Animals -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/wolf.jpg" alt="Wolf" onclick="openLightbox(this.src)" />
+    </div>
+    <div class="content">
+      <h2>Wolf</h2>
+      <p>Wild canine, lives in packs and hunts in groups.</p>
+    </div>
+  </div>
+
+  <!-- Card 14 -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 12 image.jpg" alt="Skardu Valley"  onclick="openLightbox()"/>
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Skardu Valley - Gilgit Baltistan</h2>
+      <p>Gateway to K2 and home of stunning landscapes.</p>
+    </div>
+  </div>
+  <!-- Card 15 -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 10 image.jpeg" alt="Minar-e-Pakistan" onclick="openLightbox()" />
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Minar-e-Pakistan - Lahore</h2>
+      <p>Monument where Pakistan Resolution was passed in 1940.</p>
+    </div>
+  </div>
+
+</div>
+
+
+   <script src="js/script.js"></script>
+  </body>
+</html>
