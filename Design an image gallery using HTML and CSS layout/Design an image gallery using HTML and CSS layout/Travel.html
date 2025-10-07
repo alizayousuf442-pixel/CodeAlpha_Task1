@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pakistan Places Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Federant&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" href="images/gallery 7 image.jpg" type="image/jpg" />
+    
+  
+  </head>
+  <body>
+   
+    <!-- desktop screen -->
+    <div class="sidebar" id="sidebar">
+<div class="header">
+  <h3 class="libre-baskerville-regular">
+    <i class="fa-solid fa-house"></i> Gallery
+  </h3>
+</div>
+
+
+      <ul class="navbar">
+  <li class="nav-items "><a href="index.html"><i class="fa-solid fa-images"></i> All Photos</a></li>
+  <li class="nav-items"><a href="Nature.html"><i class="fa-solid fa-tree"></i> Nature</a></li>
+  <li class="nav-items"><a href="Travel.html"><i class="fa-solid fa-plane"></i> Travel</a></li>
+  <li class="nav-items"><a href="Animal.html"><i class="fa-solid fa-paw"></i> Animals</a></li>
+</ul>
+    </div>
+
+  <!-- Mobile screen -->
+<div class="toggler">
+  <h3 class="libre-baskerville-regular">
+    <i class="fa-solid fa-house"></i> Gallery
+  </h3>
+  <div class="toggle-btn" id="toggleBtn">&#9776;</div>
+</div>
+
+<!-- Mobile sidebar (hidden by default) -->
+<div class="mobile-sidebar" id="MobileSidebar">
+  <div class="header">
+   <h3 class="libre-baskerville-regular">
+    <i class="fa-solid fa-house"></i> Gallery
+  </h3>
+  </div>
+
+  <ul class="navbar">
+    <li class="nav-items"><a href="index.html"><i class="fa-solid fa-images"></i> All Photos</a></li>
+    <li class="nav-items"><a href="Nature.html"><i class="fa-solid fa-tree"></i> Nature</a></li>
+    <li class="nav-items"><a href="Travel.html"><i class="fa-solid fa-plane"></i> Travel</a></li>
+    <li class="nav-items"><a href="Animal.html"><i class="fa-solid fa-paw"></i> Animals</a></li>
+  </ul>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <div class="icon" onclick="closeLightbox()">&#10006;</div>
+  <div class="icon-left" id="prevbtn">&#9664;</div>  
+   <img id="lightbox-img" src="" > 
+ 
+<div class="icon-right" id="nextbtn">&#9654;</div>  
+
+</div>
+
+
+    <div class="container">
+
+  <!-- Card 1 -->
+  <div class="card" >
+    <div class="image-box" >
+      <img src="images/gallery 1 image.jpg" alt="K2 Mountain" onclick="openLightbox(this.src)" />
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>K2 Mountain - Gilgit Baltistan</h2>
+      <p>World’s 2nd highest peak, known as the Savage Mountain.</p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 2 image.jpg" alt="Fairy Meadows" onclick="openLightbox(this.src)"  />
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Fairy Meadows - Nanga Parbat View</h2>
+      <p>A breathtaking green plateau near Nanga Parbat.</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 3 image.jpg" alt="Attabad Lake" onclick="openlightbox(this.src)" />
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Attabad Lake - Hunza</h2>
+      <p>Formed after a landslide in 2010, now a tourist spot.</p>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 4 image.jpg" alt="Gwadar Beach" onclick="openlightbox(this.src)"  />
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Gwadar Beach - Balochistan</h2>
+      <p>Golden beaches meeting the Arabian Sea.</p>
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 5 image.jpg" alt="Makran Coastal Highway" onclick="openlightbox(this.src)"  />
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Makran Coastal Highway</h2>
+      <p>A scenic highway along the Arabian Sea coast.</p>
+    </div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 6.jpg" alt="Hunza Valley" onclick="openlightbox(this.src)"  />
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Hunza Valley - Gilgit</h2>
+      <p>Valley of peace, beauty, and snowy mountains.</p>
+    </div>
+  </div>
+
+  <!-- Card 7 -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 7 image.jpg" alt="Badshahi Mosque" onclick="openlightbox(this.src)" />
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Badshahi Mosque - Lahore</h2>
+      <p>One of the largest mosques, built by Emperor Aurangzeb.</p>
+    </div>
+  </div>
+
+  <!-- Card 8 -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 8 image.jpg" alt="Lal Suhanra Desert" onclick="openlightbox(this.src)" />
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Lal Suhanra Desert - Bahawalpur</h2>
+      <p>Unique desert with wildlife and historical value.</p>
+    </div>
+  </div>
+
+  <!-- Card 9 -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 9 image.jpg" alt="Saif-ul-Malook Lake"  onclick="openLightbox()"/>
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Saif-ul-Malook Lake - Naran</h2>
+      <p>Legendary lake surrounded by snow-capped peaks.</p>
+    </div>
+  </div>
+
+  <!-- Card 10 -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 10 image.jpeg" alt="Minar-e-Pakistan" onclick="openLightbox()" />
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Minar-e-Pakistan - Lahore</h2>
+      <p>Monument where Pakistan Resolution was passed in 1940.</p>
+    </div>
+  </div>
+
+  <!-- Card 11 -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 11 image.jpg" alt="Shalimar Gardens"  onclick="openLightbox()"/>
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Shalimar Gardens - Lahore</h2>
+      <p>Mughal-era royal gardens built by Shah Jahan.</p>
+    </div>
+  </div>
+
+  <!-- Card 12 -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 12 image.jpg" alt="Skardu Valley"  onclick="openLightbox()"/>
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Skardu Valley - Gilgit Baltistan</h2>
+      <p>Gateway to K2 and home of stunning landscapes.</p>
+    </div>
+  </div>
+    <!-- Card 13-->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 12 image.jpg" alt="Skardu Valley"  onclick="openLightbox()"/>
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Skardu Valley - Gilgit Baltistan</h2>
+      <p>Gateway to K2 and home of stunning landscapes.</p>
+    </div>
+  </div>
+  <!-- Card 14 -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 12 image.jpg" alt="Skardu Valley"  onclick="openLightbox()"/>
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Skardu Valley - Gilgit Baltistan</h2>
+      <p>Gateway to K2 and home of stunning landscapes.</p>
+    </div>
+  </div>
+  <!-- Card 15 -->
+  <div class="card">
+    <div class="image-box">
+      <img src="images/gallery 12 image.jpg" alt="Skardu Valley"  onclick="openLightbox()"/>
+      <div class="icons">
+        <i class="fa-solid fa-grip"></i>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Skardu Valley - Gilgit Baltistan</h2>
+      <p>Gateway to K2 and home of stunning landscapes.</p>
+    </div>
+  </div>
+
+
+</div>
+
+   <script src="js/script.js"></script>
+  </body>
+</html>
